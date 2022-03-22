@@ -6,7 +6,8 @@ dashboardPage(
       menuItem("How to Use", tabName = "tab_1"),
       menuItem("Base Time Series", tabName = "tab_2", icon = icon("dashboard")),
       menuItem("Further Analysis", tabName = "tab_3", icon = icon("th")),
-      menuItem("Even Further Analysis", tabName = "tab_4", icon = icon("th"))
+      menuItem("Even Further Analysis", tabName = "tab_4", icon = icon("th")),
+      menuItem("Surprise", tabName = "tab_5")
     )
   ),
   
@@ -57,6 +58,12 @@ dashboardPage(
 tabItem(tabName = "tab_4",
         fluidRow(
           box(plotOutput('Forecast'))
+        )
+        ),
+
+tabItem(tabName = "tab_5",
+        fluidRow(
+          box(img(src="Cow.gif", height = 500, width = 600))
         )
         )
                  
